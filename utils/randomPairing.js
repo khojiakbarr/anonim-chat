@@ -5,6 +5,7 @@ const randomPairing = async (currentUserId) => {
     telegramId: { $ne: currentUserId },
     pairedWith: null,
   });
+  console.log(availableUsers);
 
   if (availableUsers.length > 0) {
     const randomUser =

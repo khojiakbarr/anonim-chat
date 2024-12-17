@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema({
   telegramId: { type: Number, required: true, unique: true },
   name: { type: String },
   age: { type: Number },
-  gender: { type: String, enum: ["Erkak", "Ayol"] },
+  gender: { type: String, enum: ["erkak", "ayol"] },
   isPremium: { type: Boolean, default: false },
   pairedWith: { type: Number, default: null }, // Bog'langan foydalanuvchi
 });
