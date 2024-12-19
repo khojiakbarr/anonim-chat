@@ -70,7 +70,7 @@ bot.start(async (ctx) => {
   }
 });
 
-// Suhbatdosh qidirish
+
 bot.hears("Suhbatdosh qidirish", async (ctx) => {
   const chatId = ctx.chat.id;
   const user = await User.findOne({ telegramId: chatId });
